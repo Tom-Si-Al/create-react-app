@@ -1,7 +1,7 @@
 {
   "name": "create-react-app",
   "version": "0.1.0",
-  "homepage": "http://tom-si-al.github.io/create-react-app",
+  "homepage": "https://tom-si-al.github.io/create-react-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
