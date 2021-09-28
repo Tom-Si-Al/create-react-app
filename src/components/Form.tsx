@@ -12,7 +12,7 @@ type MyProps = {
   isValid: (valid: boolean) => void
 };
 type MyState = {
-  input: string; // like this
+  input: string; 
   isEmailValid: boolean;
 };
 export class Form extends React.Component<MyProps,MyState> {
@@ -24,7 +24,7 @@ export class Form extends React.Component<MyProps,MyState> {
 
   myChangeHandler = (event: any) => {
     this.setState({input: event.target.value});
-    this.setState({isEmailValid: isEmailValid(this.state.input)})
+    //this.setState({isEmailValid: isEmailValid(this.state.input)})
   }
 
   mySubmitHandler = (event: any) => {
@@ -49,7 +49,7 @@ export class Form extends React.Component<MyProps,MyState> {
             isInvalid={!this.state.isEmailValid}
           />
         </InputGroup>
-        <Button as="input" type="submit" value="Submit" />{' '}
+        <Button as="input" type="submit" value="Submit" />
       </form>
     );
   }
