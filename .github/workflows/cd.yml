@@ -15,7 +15,9 @@ jobs:
         run: npm run build
       - name: Check out Github Pages branch
       - run: |
+        git stash
         git checkout gh-pages
+        git stash pop
         git add -- ./build
         git commit -m "New changes"
         git push
