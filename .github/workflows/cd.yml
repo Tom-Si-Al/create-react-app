@@ -1,0 +1,21 @@
+name: CD
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish_stage:
+    environment: github-pages
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Build
+        run: npm run build
+      - name: Check out Github Pages branch
+      - run: |
+        git checkout gh-pages
+        git add -- ./build
+        git commit -m "New changes"
+        git push
