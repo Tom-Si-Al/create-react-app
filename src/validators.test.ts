@@ -1,4 +1,4 @@
-import { isEmailValid } from "./validators";
+import { isEmailValid } from './validators'
 
 describe('test suite', () => {
   it('returns false if the string does not contain an @', () => {
