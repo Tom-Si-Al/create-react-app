@@ -51,24 +51,27 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Compare the Market intro to CICD
 
 This project was created for the [Learn about Continuous Integration with Compare the Market
-](https://codebar.io/events/continuous-integration-with-compare-the-market) event.
+](https://codebar.io/events/continuous-integration-with-compare-the-market) [CodeBar](https://codebar.io) event.
 
 In this presentation we will deploy the [React Create App](https://reactjs.org/docs/create-a-new-react-app.html) to [GitHub Pages](https://pages.github.com/).
 
 The React Create App creates a simple boilerplate in React and (in our case TypeScript). GitHub Pages is free hosting that can be synced directly from your GitHub repository.
 
-In the event we will demo the following:
+## In the event we will demo the following
 
 [Simon Mayes](https://github.com/msyea)
+<img src="https://avatars.githubusercontent.com/u/1286781?v=4" width="50%">
 * Introduce GitHub Pages and the Create React App
 * Demo the deployed application
 * Make some changes locally and deploy manually to GitHub pages (let's hope I don't introduce a 🐛!)
 
 [Tom Bastian](https://github.com/tomjbast)
+<img src="https://avatars.githubusercontent.com/u/42913132?v=4" width="50%">
 * Will rescue the situation and introduce linting and tests to prevent regressions
 * Demo how you can run the test suite in GitHub Actions to ensure that they're definitely run on each commit
 
 [Albert Yanit](https://github.com/ayanit1)
+<img src="https://avatars.githubusercontent.com/u/24323722?v=4" width="50%">
 * Will show how you can enforce that the Continuous Integration Suite runs and blocks the PR
 * Merge the commit from the branch to main
 * Demo how to do a Release and Continuous Deployment to GitHub Pages 🎉
