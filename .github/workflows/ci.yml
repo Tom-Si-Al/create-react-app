@@ -8,27 +8,60 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Set up node env and cache node modules
+      - name: Set up node env
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          cache: npm
-      - run: npm i
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install npm
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
       - name: Lint
         run: npm run style
+
   build:
     runs-on: ubuntu-latest
+    needs: Lint
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      - name: Set up node env
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install npm
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
       - name: Build
         run: npm run build
+
   test:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      - name: Set up node env
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install npm
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
       - name: Unit tests
         run: npm run test
 
