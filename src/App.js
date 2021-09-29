@@ -52,7 +52,7 @@ class App extends React.Component {
             <Form onSubmit={this.handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" onChange={this.handleEmailValidation} isValid={this.isDefined(this.state.isEmailValid) && this.state.isEmailValid} isInvalid={this.isDefined(this.state.isEmailValid) && !this.state.isEmailValid} />
+                <Form.Control data-testid="formEmail" type="text" placeholder="Enter email" onChange={this.handleEmailValidation} isValid={this.isDefined(this.state.isEmailValid) && this.state.isEmailValid} isInvalid={this.isDefined(this.state.isEmailValid) && !this.state.isEmailValid} />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
@@ -60,7 +60,7 @@ class App extends React.Component {
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" onChange={this.handlePasswordValidation} isValid={this.isDefined(this.state.isPasswordValid) && this.state.isPasswordValid} isInvalid={this.isDefined(this.state.isPasswordValid) && !this.state.isPasswordValid} />
+                <Form.Control data-testid="formPassword" type="password" placeholder="Password" onChange={this.handlePasswordValidation} isValid={this.isDefined(this.state.isPasswordValid) && this.state.isPasswordValid} isInvalid={this.isDefined(this.state.isPasswordValid) && !this.state.isPasswordValid} />
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
