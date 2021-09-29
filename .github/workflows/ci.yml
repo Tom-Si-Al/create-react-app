@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '14'
           cache: npm
-        run: npm i
+      - run: npm i
       - name: Lint
         run: npm run style
   build:
