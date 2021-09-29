@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import React from 'react'
 
