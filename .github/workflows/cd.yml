@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-      - name: Set up node env and cache node modules
+      - name: Set up node env
         uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -25,7 +25,7 @@ jobs:
         run: npm run build
       - name: Deploy Github pages
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           npm run deploy
-          echo "Successfully deployed app onto Github pages! :tada: :point_right: https://tom-si-al.github.io/create-react-app"
+          echo "Great success! :tada: :point_right: https://tom-si-al.github.io/create-react-app"
