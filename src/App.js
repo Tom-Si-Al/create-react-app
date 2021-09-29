@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {Container, Row, Col, Form, Button} from 'react-bootstrap'
+import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import React from 'react'
+
+import { isEmailValid, isPasswordValid} from './validators'
 
 class App extends React.Component {
 
@@ -15,7 +17,7 @@ class App extends React.Component {
   handleEmailValidation = (event) => {
     this.setState({
       email: event.target.value,
-      isEmailValid: event.target.value.includes("@")
+      isEmailValid: isEmailValid(event.target.value)
     })
   }
 
@@ -23,7 +25,7 @@ class App extends React.Component {
   handlePasswordValidation = (event) => {
     this.setState({
       password: event.target.value,
-      isPasswordValid: event.target.value.length > 5
+      isPasswordValid: isPasswordValid(event.target.value)
     })
   }
 
