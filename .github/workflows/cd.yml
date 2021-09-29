@@ -23,7 +23,5 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Check out Github Pages branch
-        run: |
-        git commit -am "Deploying: ${{ github.event.release.name }}"
-        git push
+      - name: Deploy Github pages
+        run: npm run deploy
