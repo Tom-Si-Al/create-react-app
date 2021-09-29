@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap'
 import React from 'react'
 
 import { isEmailValid, isPasswordValid } from './validators'
+
+import happy from './happy.jpg'
+import sad from './sad.jpg'
 
 class App extends React.Component {
   state = {
@@ -93,12 +96,12 @@ class App extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={6}>
             {this.state.submitted && this.state.isFormValid && (
-              <h1>Happy Alex</h1>
+              <Image src={happy} alt="Happy Meerkat" rounded width="100%" />
             )}
             {this.state.submitted && !this.state.isFormValid && (
-              <h1>Sad Alex</h1>
+              <Image src={sad} alt="Sad Meerkat" rounded width="100%" />
             )}
           </Col>
         </Row>
