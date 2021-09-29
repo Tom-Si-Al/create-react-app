@@ -1,10 +1,8 @@
 import React from "react";
-
-
-import FormBS from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
+
 import { isEmailValid } from "../validators";
 
 type MyProps = {
@@ -12,7 +10,7 @@ type MyProps = {
   isValid: (valid: boolean) => void
 };
 type MyState = {
-  input: string; // like this
+  input: string; 
   isEmailValid: boolean;
 };
 export class Form extends React.Component<MyProps,MyState> {
@@ -23,15 +21,18 @@ export class Form extends React.Component<MyProps,MyState> {
   }
 
   myChangeHandler = (event: any) => {
-    this.setState({input: event.target.value});
-    this.setState({isEmailValid: isEmailValid(this.state.input)})
+    this.setState({
+      input: event.target.value
+    }, () => {
+      this.setState({
+        isEmailValid: isEmailValid(this.state.input)}, () => {
+        this.props.isValid(this.state.isEmailValid)
+      })
+    })
   }
 
   mySubmitHandler = (event: any) => {
     event.preventDefault();
-    this.setState({isEmailValid: isEmailValid(this.state.input)}, () => {
-      this.props.isValid(this.state.isEmailValid)
-    })
   }
 
   render() {
@@ -39,9 +40,8 @@ export class Form extends React.Component<MyProps,MyState> {
       <form onSubmit={this.mySubmitHandler}>
         <p>Enter your email, and submit:</p>
         <InputGroup className="mb-3">
-          <InputGroup.Text>Email</InputGroup.Text>
           <FormControl onChange={this.myChangeHandler}
-            placeholder="Username"
+            placeholder="Email"
             aria-label="Username"
             aria-describedby="basic-addon1"
             name="email"
@@ -49,7 +49,7 @@ export class Form extends React.Component<MyProps,MyState> {
             isInvalid={!this.state.isEmailValid}
           />
         </InputGroup>
-        <Button as="input" type="submit" value="Submit" />{' '}
+        <Button as="input" type="submit" value="Submit" />
       </form>
     );
   }
