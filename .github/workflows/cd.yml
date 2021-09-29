@@ -28,4 +28,3 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         npm run deploy
-        echo "Great success! :tada: :point_right: https://tom-si-al.github.io/create-react-app "
