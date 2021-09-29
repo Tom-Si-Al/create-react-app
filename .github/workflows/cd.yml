@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-          with:
-            ref: gh-pages
+        with:
+          ref: gh-pages
       - name: Set up node env and cache node modules
         uses: actions/setup-node@v2
           with:
