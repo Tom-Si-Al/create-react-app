@@ -47,7 +47,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "airbnb-typescript/base",
+      "airbnb-typescript",
       "plugin:jest/recommended",
       "react-app",
       "react-app/jest",
@@ -67,6 +67,16 @@
       "import/prefer-default-export": "off",
       "prettier/prettier": [
         "error"
+      ],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
       ]
     },
     "parserOptions": {
