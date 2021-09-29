@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+          with:
+            ref: gh-pages
       - name: Build
         run: npm run build
       - name: Check out Github Pages branch
