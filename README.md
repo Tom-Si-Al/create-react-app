@@ -83,10 +83,10 @@ First you need to create a new repository with the following settings:
 <img src="img/create-repo.png" width="50%">
 
 ```
-# checkout our repository
-git clone git@github.com:Tom-Si-Al/create-react-app.git
+# clone our repository
+git clone git@github.com:Tom-Si-Al/ctm-cicd-demo.git
 # change the origin from our repository to yours
-git remote set-url origin git@github.com:YOUR_USERNAME/create-react-app.git
+git remote set-url origin git@github.com:YOUR_USERNAME/ctm-cicd-demo.git
 # push to your new repo
 git push -u origin main
 ```
