@@ -23,7 +23,6 @@ jobs:
         run: npm run build
       - name: Check out Github Pages branch
       - run: |
-        git pull origin/main
-        git merge main
-        git commit -m "Deploying: ${{ github.event.release.name }}"
+        git pull origin main
+        git commit -am "Deploying: ${{ github.event.release.name }}"
         git push
