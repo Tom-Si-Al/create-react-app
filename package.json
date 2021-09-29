@@ -10,8 +10,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "style": "eslint . --ext .ts",
-    "style:fix": "eslint . --ext .ts --fix"
+    "style": "eslint . --ext .ts,.tsx",
+    "style:fix": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
