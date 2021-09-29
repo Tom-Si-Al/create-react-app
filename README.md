@@ -80,7 +80,7 @@ In the event we will demo the following:
 You cannot fork the repo as you need to run GitHub Actions in your own account and not ours.
 
 First you need to create a new repository with the following settings:
-![create repo](img/create-repo.png | width=100)
+<img src="img/create-repo.png" width="50%">
 
 ```
 # checkout our repository
