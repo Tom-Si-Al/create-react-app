@@ -1,4 +1,4 @@
-import { isEmailValid, isPasswordValid } from "./validators";
+import { isEmailValid, isPasswordValid } from './validators'
 
 describe('test suite', () => {
   it('returns false if the string does not contain an @', () => {
@@ -20,5 +20,4 @@ describe('test suite', () => {
     const testString = 'thisPassword'
     expect(isPasswordValid(testString)).toBe(true)
   })
-
 })

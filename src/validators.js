@@ -1,13 +1,13 @@
 export const isEmailValid = (email) => {
-  if (email.includes("@")  ){
+  if (email.includes('@')) {
     return true
-  } 
+  }
   return false
 }
 
 export const isPasswordValid = (password) => {
-  if (password.length > 5 ){
+  if (password.length > 5) {
     return true
-  } 
+  }
   return false
 }
