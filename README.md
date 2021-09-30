@@ -77,7 +77,9 @@ Albert
 
 - Introduction of the example CI workflow
   - Workflow is accessed by clicking the actions tab on the repository
+  <img src="img/actions-tab.png" width="50%">
   - Split into 3 jobs lint, build, test
+  <img src="img/ci-jobs.png" width="50%">
 
 - How the code looks?
   - To see this in code look at the [.github/workflows/ci.yml file](https://github.com/Tom-Si-Al/create-react-app/blob/main/.github/workflows/ci.yml)
