@@ -5,11 +5,11 @@ This project was created for the [Learn about Continuous Integration with Compar
 
 In this presentation we will deploy the [React Create App](https://reactjs.org/docs/create-a-new-react-app.html) to [GitHub Pages](https://pages.github.com/).
 
-The React Create App creates a simple boilerplate in React and (in our case TypeScript). GitHub Pages is free hosting that can be synced directly from your GitHub repository.
+The React Create App creates a simple React boilerplate app.  GitHub Pages is free hosting that can be synced directly from your GitHub repository.
 
 ## In the event we will demo the following
 
-[Simon Mayes](https://github.com/msyea)
+### [Simon Mayes](https://github.com/msyea)
 
 <img src="https://avatars.githubusercontent.com/u/1286781?v=4" width="50%">
 
@@ -17,14 +17,14 @@ The React Create App creates a simple boilerplate in React and (in our case Type
 * Demo the deployed application
 * Make some changes locally and deploy manually to GitHub pages (let's hope I don't introduce a 🐛!)
 
-[Tom Bastian](https://github.com/tomjbast)
+### [Tom Bastian](https://github.com/tomjbast)
 
 <img src="https://avatars.githubusercontent.com/u/42913132?v=4" width="50%">
 
 * Will rescue the situation and introduce linting and tests to prevent regressions
 * Demo how you can run the test suite in GitHub Actions to ensure that they're definitely run on each commit
 
-[Albert Yanit](https://github.com/ayanit1)
+### [Albert Yanit](https://github.com/ayanit1)
 
 <img src="https://avatars.githubusercontent.com/u/24323722?v=4" width="50%">
 
@@ -32,12 +32,12 @@ The React Create App creates a simple boilerplate in React and (in our case Type
 * Merge the commit from the branch to main
 * Demo how to do a Release and Continuous Deployment to GitHub Pages 🎉
 
-[Simon Mayes](https://github.com/msyea)
+### [Simon Mayes](https://github.com/msyea)
 
 * Will demo our new Future CI model and how complex CICD might work at CtM
 
 ## How to use this repo
-You cannot fork the repo as you need to run GitHub Actions in your own account and not ours.
+You cannot fork the repo because you need to run GitHub Actions in your own account (forks run in ours).
 
 First you need to create a new repository with the following settings:
 <img src="img/create-repo.png" width="50%">
