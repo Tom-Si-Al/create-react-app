@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap'
 import React from 'react'
 
@@ -48,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <Container>
-        <Row>
+        <Row className="pt-4">
           <Col>
             <Form onSubmit={this.handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -95,13 +94,13 @@ class App extends React.Component {
             </Form>
           </Col>
         </Row>
-        <Row>
-          <Col xs={6}>
+        <Row className="pt-4">
+          <Col className="mx-auto" xs={6}>
             {this.state.submitted && this.state.isFormValid && (
-              <Image src={happy} alt="Happy Meerkat" rounded width="100%" />
+              <Image src={happy} alt="Happy Meerkat" rounded fluid />
             )}
             {this.state.submitted && !this.state.isFormValid && (
-              <Image src={sad} alt="Sad Meerkat" rounded width="100%" />
+              <Image src={sad} alt="Sad Meerkat" rounded fluid />
             )}
           </Col>
         </Row>
