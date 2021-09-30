@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.33743c3b.chunk.js",
-    "main.js.map": "/static/js/main.33743c3b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce80737e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce80737e.js.map",
-    "static/css/2.f2512455.chunk.css": "/static/css/2.f2512455.chunk.css",
-    "static/js/2.fc101819.chunk.js": "/static/js/2.fc101819.chunk.js",
-    "static/js/2.fc101819.chunk.js.map": "/static/js/2.fc101819.chunk.js.map",
-    "static/js/3.abc64f63.chunk.js": "/static/js/3.abc64f63.chunk.js",
-    "static/js/3.abc64f63.chunk.js.map": "/static/js/3.abc64f63.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.f2512455.chunk.css.map": "/static/css/2.f2512455.chunk.css.map",
-    "static/js/2.fc101819.chunk.js.LICENSE.txt": "/static/js/2.fc101819.chunk.js.LICENSE.txt",
-    "static/media/happy.016724b0.jpg": "/static/media/happy.016724b0.jpg",
-    "static/media/sad.12b743f0.jpg": "/static/media/sad.12b743f0.jpg"
+    "main.js": "/create-react-app/static/js/main.33743c3b.chunk.js",
+    "main.js.map": "/create-react-app/static/js/main.33743c3b.chunk.js.map",
+    "runtime-main.js": "/create-react-app/static/js/runtime-main.1fe6139b.js",
+    "runtime-main.js.map": "/create-react-app/static/js/runtime-main.1fe6139b.js.map",
+    "static/css/2.f2512455.chunk.css": "/create-react-app/static/css/2.f2512455.chunk.css",
+    "static/js/2.fc101819.chunk.js": "/create-react-app/static/js/2.fc101819.chunk.js",
+    "static/js/2.fc101819.chunk.js.map": "/create-react-app/static/js/2.fc101819.chunk.js.map",
+    "static/js/3.abc64f63.chunk.js": "/create-react-app/static/js/3.abc64f63.chunk.js",
+    "static/js/3.abc64f63.chunk.js.map": "/create-react-app/static/js/3.abc64f63.chunk.js.map",
+    "index.html": "/create-react-app/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/create-react-app/static/css/2.f2512455.chunk.css.map",
+    "static/js/2.fc101819.chunk.js.LICENSE.txt": "/create-react-app/static/js/2.fc101819.chunk.js.LICENSE.txt",
+    "static/media/happy.016724b0.jpg": "/create-react-app/static/media/happy.016724b0.jpg",
+    "static/media/sad.12b743f0.jpg": "/create-react-app/static/media/sad.12b743f0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce80737e.js",
+    "static/js/runtime-main.1fe6139b.js",
     "static/css/2.f2512455.chunk.css",
     "static/js/2.fc101819.chunk.js",
     "static/js/main.33743c3b.chunk.js"
