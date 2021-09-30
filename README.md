@@ -70,14 +70,37 @@ Functional test that fails
 False to true for validation push that up
 Talk about CI
 
-Al
-PR workflow gloss over 
-See box ticked
-Merge to master
-Approval step in 
-Remove ability to push to production from local
-And introduce CD workflow
-Final end to end demo
+Albert
+- CI workflow
+  - Brief introduction to Github Actions. For more information see the [Github Actions documentation](https://docs.github.com/en/actions). GitHub Actions allow us to automate, create, customize and execute software development workflows direct from your repositories
+  - 3 Keywords to remember is Workflow, Job and steps. It may potentially be different for other CI providers but this is Github's syntax
+
+- Introduction of the example CI workflow
+  - Workflow is accessed by clicking the actions tab on the repository
+  <img src="img/actions-tab.png" width="50%">
+  - Split into 3 jobs lint, build, test
+  <img src="img/ci-jobs.png" width="50%">
+
+- How the code looks?
+  - To see this in code look at the [.github/workflows/ci.yml file](https://github.com/Tom-Si-Al/create-react-app/blob/main/.github/workflows/ci.yml)
+  - What the yaml file does?
+  CI job uses the pull request event trigger
+  Check out code so the job has knowledge of your repository
+  Install. You install the dependencies to prepare the environment of your app
+  Style. Are there any incorrect syntax?
+  Build the app. Any compilation errors?
+  Test. Are the unit test passing?
+  - We've automated the commands that Tom ran locally. It doesn't necessarily mean you don't have to run them locally anymore, it's just more guard rails to your work
+
+- After running the workflow
+  - Green ticked box in PR
+  - Red cross failing build. I could not merge this PR if our workflow fails
+
+- CD workflow
+  - Very similar to the CI setup. You set up the environment to which the workflow runs. This can be found in the [.github/workflows/ci.yml file](https://github.com/Tom-Si-Al/create-react-app/blob/main/.github/workflows/cd.yml)
+  - The event trigger is on published event which occurs when you publish a release
+
+- Results of our deploy to production
 
 Si
 More complicated model
