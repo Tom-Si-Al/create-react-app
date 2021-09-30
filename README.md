@@ -3,7 +3,7 @@
 This project was created for the [Learn about Continuous Integration with Compare the Market
 ](https://codebar.io/events/continuous-integration-with-compare-the-market) [CodeBar](https://codebar.io) event.
 
-In this presentation we will deploy the [React Create App](https://reactjs.org/docs/create-a-new-react-app.html) to [GitHub Pages](https://pages.github.com/).
+In this presentation we will [deploy](https://create-react-app.dev/docs/deployment/#github-pages) the [React Create App](https://reactjs.org/docs/create-a-new-react-app.html) to [GitHub Pages](https://pages.github.com/).
 
 The React Create App creates a simple React boilerplate app.  GitHub Pages is free hosting that can be synced directly from your GitHub repository.
 
